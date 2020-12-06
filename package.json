@@ -1,0 +1,39 @@
+{
+  "name": "@rowanmanning/fetch-feed",
+  "version": "0.0.0",
+  "description": "Fetch and parse RSS and Atom feeds",
+  "keywords": [
+    "feed",
+    "fetch"
+  ],
+  "author": "Rowan Manning (https://rowanmanning.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowanmanning/fetch-feed.git"
+  },
+  "homepage": "https://github.com/rowanmanning/fetch-feed",
+  "bugs": "https://github.com/rowanmanning/fetch-feed/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "feedparser": "^2.2.10",
+    "got": "^11.8.0"
+  },
+  "devDependencies": {
+    "@rowanmanning/eslint-config": "^2.2.0",
+    "@rowanmanning/make": "^2.1.0",
+    "eslint": "^7.14.0",
+    "mocha": "^8.2.1",
+    "mockery": "^2.1.0",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "proclaim": "^3.6.0",
+    "sinon": "^9.2.1"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "make ci"
+  }
+}
