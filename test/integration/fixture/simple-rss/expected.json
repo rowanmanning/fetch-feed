@@ -1,0 +1,159 @@
+{
+	"resolvedValue": {
+		"url": null,
+		"title": "RSS Title",
+		"entryCount": 1
+	},
+	"feedInfo": {
+		"#ns": [],
+		"@": [],
+		"#xml": {
+			"version": "1.0",
+			"encoding": "UTF-8"
+		},
+		"#type": "rss",
+		"#version": "2.0",
+		"title": "RSS Title",
+		"description": "This is an example of an RSS feed",
+		"date": "2010-09-06T00:01:00.000Z",
+		"pubdate": "2009-09-06T16:20:00.000Z",
+		"pubDate": "2009-09-06T16:20:00.000Z",
+		"link": "http://www.example.com/main.html",
+		"xmlurl": null,
+		"xmlUrl": null,
+		"author": null,
+		"language": null,
+		"favicon": null,
+		"copyright": "2020 Example.com All rights reserved",
+		"generator": null,
+		"cloud": {},
+		"image": {},
+		"categories": [],
+		"rss:@": {},
+		"rss:title": {
+			"@": {},
+			"#": "RSS Title"
+		},
+		"rss:description": {
+			"@": {},
+			"#": "This is an example of an RSS feed"
+		},
+		"rss:link": {
+			"@": {},
+			"#": "http://www.example.com/main.html"
+		},
+		"rss:copyright": {
+			"@": {},
+			"#": "2020 Example.com All rights reserved"
+		},
+		"rss:lastbuilddate": {
+			"@": {},
+			"#": "Mon, 06 Sep 2010 00:01:00 +0000"
+		},
+		"rss:pubdate": {
+			"@": {},
+			"#": "Sun, 06 Sep 2009 16:20:00 +0000"
+		},
+		"rss:ttl": {
+			"@": {},
+			"#": "1800"
+		}
+	},
+	"feedEntries": [
+		{
+			"title": "Example entry",
+			"description": "Here is some text containing an interesting description.",
+			"summary": "Here is some text containing an interesting description.",
+			"date": "2009-09-06T16:20:00.000Z",
+			"pubdate": "2009-09-06T16:20:00.000Z",
+			"pubDate": "2009-09-06T16:20:00.000Z",
+			"link": "http://www.example.com/blog/post/1",
+			"guid": "7bd204c6-1655-4c27-aeee-53f933c5395f",
+			"author": null,
+			"comments": null,
+			"origlink": null,
+			"image": {},
+			"source": {},
+			"categories": [],
+			"enclosures": [],
+			"rss:@": {},
+			"rss:title": {
+				"@": {},
+				"#": "Example entry"
+			},
+			"rss:description": {
+				"@": {},
+				"#": "Here is some text containing an interesting description."
+			},
+			"rss:link": {
+				"@": {},
+				"#": "http://www.example.com/blog/post/1"
+			},
+			"rss:guid": {
+				"@": {
+					"ispermalink": "false"
+				},
+				"#": "7bd204c6-1655-4c27-aeee-53f933c5395f"
+			},
+			"rss:pubdate": {
+				"@": {},
+				"#": "Sun, 06 Sep 2009 16:20:00 +0000"
+			},
+			"meta": {
+				"#ns": [],
+				"@": [],
+				"#xml": {
+					"version": "1.0",
+					"encoding": "UTF-8"
+				},
+				"#type": "rss",
+				"#version": "2.0",
+				"title": "RSS Title",
+				"description": "This is an example of an RSS feed",
+				"date": "2010-09-06T00:01:00.000Z",
+				"pubdate": "2009-09-06T16:20:00.000Z",
+				"pubDate": "2009-09-06T16:20:00.000Z",
+				"link": "http://www.example.com/main.html",
+				"xmlurl": null,
+				"xmlUrl": null,
+				"author": null,
+				"language": null,
+				"favicon": null,
+				"copyright": "2020 Example.com All rights reserved",
+				"generator": null,
+				"cloud": {},
+				"image": {},
+				"categories": [],
+				"rss:@": {},
+				"rss:title": {
+					"@": {},
+					"#": "RSS Title"
+				},
+				"rss:description": {
+					"@": {},
+					"#": "This is an example of an RSS feed"
+				},
+				"rss:link": {
+					"@": {},
+					"#": "http://www.example.com/main.html"
+				},
+				"rss:copyright": {
+					"@": {},
+					"#": "2020 Example.com All rights reserved"
+				},
+				"rss:lastbuilddate": {
+					"@": {},
+					"#": "Mon, 06 Sep 2010 00:01:00 +0000"
+				},
+				"rss:pubdate": {
+					"@": {},
+					"#": "Sun, 06 Sep 2009 16:20:00 +0000"
+				},
+				"rss:ttl": {
+					"@": {},
+					"#": "1800"
+				}
+			}
+		}
+	]
+}

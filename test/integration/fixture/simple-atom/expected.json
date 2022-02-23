@@ -1,0 +1,216 @@
+{
+	"resolvedValue": {
+		"url": "http://example.org/feed/",
+		"title": "Example Feed",
+		"entryCount": 1
+	},
+	"feedInfo": {
+		"#ns": [
+			{
+				"xmlns": "http://www.w3.org/2005/Atom"
+			}
+		],
+		"@": [
+			{
+				"xmlns": "http://www.w3.org/2005/Atom"
+			}
+		],
+		"#xml": {
+			"version": "1.0",
+			"encoding": "utf-8"
+		},
+		"#type": "atom",
+		"#version": "1.0",
+		"title": "Example Feed",
+		"description": "A subtitle.",
+		"date": "2003-12-13T18:30:02.000Z",
+		"pubdate": "2003-12-13T18:30:02.000Z",
+		"pubDate": "2003-12-13T18:30:02.000Z",
+		"link": "http://example.org/",
+		"xmlurl": "http://example.org/feed/",
+		"xmlUrl": "http://example.org/feed/",
+		"author": null,
+		"language": null,
+		"favicon": null,
+		"copyright": null,
+		"generator": null,
+		"cloud": {},
+		"image": {},
+		"categories": [],
+		"atom:@": {
+			"xmlns": "http://www.w3.org/2005/Atom"
+		},
+		"atom:title": {
+			"@": {},
+			"#": "Example Feed"
+		},
+		"atom:subtitle": {
+			"@": {},
+			"#": "A subtitle."
+		},
+		"atom:link": [
+			{
+				"@": {
+					"href": "http://example.org/feed/",
+					"rel": "self"
+				}
+			},
+			{
+				"@": {
+					"href": "http://example.org/"
+				}
+			}
+		],
+		"atom:id": {
+			"@": {},
+			"#": "urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6"
+		},
+		"atom:updated": {
+			"@": {},
+			"#": "2003-12-13T18:30:02Z"
+		}
+	},
+	"feedEntries": [
+		{
+			"title": "Atom-Powered Robots Run Amok",
+			"description": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t<p>This is the entry content.</p>\n\t\t\t</div>",
+			"summary": "Some text.",
+			"date": "2003-12-13T18:30:02.000Z",
+			"pubdate": "2003-11-09T17:23:02.000Z",
+			"pubDate": "2003-11-09T17:23:02.000Z",
+			"link": "http://example.org/2003/12/13/atom03.html",
+			"guid": "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a",
+			"author": "John Doe",
+			"comments": null,
+			"origlink": null,
+			"image": {},
+			"source": {},
+			"categories": [],
+			"enclosures": [],
+			"atom:@": {},
+			"atom:title": {
+				"@": {},
+				"#": "Atom-Powered Robots Run Amok"
+			},
+			"atom:link": [
+				{
+					"@": {
+						"href": "http://example.org/2003/12/13/atom03"
+					}
+				},
+				{
+					"@": {
+						"rel": "alternate",
+						"type": "text/html",
+						"href": "http://example.org/2003/12/13/atom03.html"
+					}
+				},
+				{
+					"@": {
+						"rel": "edit",
+						"href": "http://example.org/2003/12/13/atom03/edit"
+					}
+				}
+			],
+			"atom:id": {
+				"@": {},
+				"#": "urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a"
+			},
+			"atom:published": {
+				"@": {},
+				"#": "2003-11-09T17:23:02Z"
+			},
+			"atom:updated": {
+				"@": {},
+				"#": "2003-12-13T18:30:02Z"
+			},
+			"atom:summary": {
+				"@": {},
+				"#": "Some text."
+			},
+			"atom:content": {
+				"@": {
+					"type": "xhtml"
+				},
+				"#": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t<p>This is the entry content.</p>\n\t\t\t</div>"
+			},
+			"atom:author": {
+				"@": {},
+				"name": {
+					"@": {},
+					"#": "John Doe"
+				},
+				"email": {
+					"@": {},
+					"#": "johndoe@example.com"
+				}
+			},
+			"meta": {
+				"#ns": [
+					{
+						"xmlns": "http://www.w3.org/2005/Atom"
+					}
+				],
+				"@": [
+					{
+						"xmlns": "http://www.w3.org/2005/Atom"
+					}
+				],
+				"#xml": {
+					"version": "1.0",
+					"encoding": "utf-8"
+				},
+				"#type": "atom",
+				"#version": "1.0",
+				"title": "Example Feed",
+				"description": "A subtitle.",
+				"date": "2003-12-13T18:30:02.000Z",
+				"pubdate": "2003-12-13T18:30:02.000Z",
+				"pubDate": "2003-12-13T18:30:02.000Z",
+				"link": "http://example.org/",
+				"xmlurl": "http://example.org/feed/",
+				"xmlUrl": "http://example.org/feed/",
+				"author": null,
+				"language": null,
+				"favicon": null,
+				"copyright": null,
+				"generator": null,
+				"cloud": {},
+				"image": {},
+				"categories": [],
+				"atom:@": {
+					"xmlns": "http://www.w3.org/2005/Atom"
+				},
+				"atom:title": {
+					"@": {},
+					"#": "Example Feed"
+				},
+				"atom:subtitle": {
+					"@": {},
+					"#": "A subtitle."
+				},
+				"atom:link": [
+					{
+						"@": {
+							"href": "http://example.org/feed/",
+							"rel": "self"
+						}
+					},
+					{
+						"@": {
+							"href": "http://example.org/"
+						}
+					}
+				],
+				"atom:id": {
+					"@": {},
+					"#": "urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6"
+				},
+				"atom:updated": {
+					"@": {},
+					"#": "2003-12-13T18:30:02Z"
+				}
+			}
+		}
+	]
+}
