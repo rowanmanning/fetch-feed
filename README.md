@@ -147,7 +147,7 @@ Fetch Feed is configured using options passed into the main `fetchFeed` function
 
 ## Contributing
 
-[The contributing guide is available here](docs/contributing.md). All contributors must follow [Fetch Feed's code of conduct](docs/code_of_conduct.md).
+[The contributing guide is available here](docs/contributing.md). All contributors must follow [this library's code of conduct](docs/code_of_conduct.md).
 
 
 ## License
