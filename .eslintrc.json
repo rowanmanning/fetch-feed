@@ -1,0 +1,8 @@
+{
+	"extends": [
+		"@rowanmanning/eslint-config"
+	],
+	"rules": {
+		"no-cond-assign": "off"
+	}
+}

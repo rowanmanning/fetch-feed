@@ -4,10 +4,10 @@
 Fetch and parse RSS and Atom feeds. Fetch Feed is a Promise-based wrapper around [node-feedparser](https://github.com/danmactough/node-feedparser).
 
 
-## Table of contents
+## Table of Contents
 
   * [Requirements](#requirements)
-  * [Usage](#running-locally)
+  * [Usage](#usage)
   * [Example](#example)
   * [Config options](#config-options)
   * [Contributing](#contributing)
@@ -18,7 +18,7 @@ Fetch and parse RSS and Atom feeds. Fetch Feed is a Promise-based wrapper around
 
 This library requires the following to run:
 
-  * [Node.js](https://nodejs.org/) v12.0.0+
+  * [Node.js](https://nodejs.org/) v12+
 
 
 ## Usage
