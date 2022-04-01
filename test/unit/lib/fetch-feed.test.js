@@ -19,6 +19,7 @@ describe('lib/fetch-feed', () => {
 		td.when(new FeedParser()).thenReturn(mockFeedParserInstance);
 		got = td.replace('got');
 		mockGotStream = {
+			off: td.func(),
 			on: td.func(),
 			pipe: td.func()
 		};
@@ -87,8 +88,15 @@ describe('lib/fetch-feed', () => {
 			);
 		});
 
-		it('pipes the feed request response into the feed parser', () => {
-			td.verify(mockGotStream.pipe(mockFeedParserInstance), {times: 1});
+		it('listens for feed a request response', () => {
+			td.verify(
+				mockGotStream.on('response', td.matchers.isA(Function)),
+				{times: 1}
+			);
+		});
+
+		it('does not pipe the feed request response into the feed parser (yet)', () => {
+			td.verify(mockGotStream.pipe(mockFeedParserInstance), {times: 0});
 		});
 
 		describe('feed parser "error" handler', () => {
@@ -114,10 +122,11 @@ describe('lib/fetch-feed', () => {
 		});
 
 		describe('feed parser "meta" handler', () => {
+			let metaHandler;
 			let mockMeta;
 
 			beforeEach(() => {
-				const metaHandler = td.explain(mockFeedParserInstance.on).calls
+				metaHandler = td.explain(mockFeedParserInstance.on).calls
 					.find(call => call.args[0] === 'meta').args[1];
 				mockMeta = {
 					title: 'mock-meta-title',
@@ -128,6 +137,31 @@ describe('lib/fetch-feed', () => {
 
 			it('calls `options.onInfo` with the feed meta information', () => {
 				td.verify(options.onInfo(mockMeta), {times: 1});
+			});
+
+			describe('when the meta has no xmlUrl property', () => {
+
+				beforeEach(() => {
+					const responseHandler = td.explain(mockGotStream.on).calls
+						.find(call => call.args[0] === 'response').args[1];
+					responseHandler({
+						url: 'mock-response-url'
+					});
+					mockMeta = {
+						title: 'mock-meta-title',
+						xmlUrl: null
+					};
+					metaHandler(mockMeta);
+				});
+
+				it('calls `options.onInfo` with the feed meta information including the response URL in place of the xmlUrl', () => {
+					td.verify(options.onInfo({
+						title: 'mock-meta-title',
+						xmlUrl: 'mock-response-url',
+						xmlurl: 'mock-response-url'
+					}), {times: 1});
+				});
+
 			});
 
 		});
@@ -185,7 +219,7 @@ describe('lib/fetch-feed', () => {
 			let requestError;
 
 			beforeEach(async () => {
-				const errorHandler = td.explain(mockFeedParserInstance.on).calls
+				const errorHandler = td.explain(mockGotStream.on).calls
 					.find(call => call.args[0] === 'error').args[1];
 				try {
 					requestError = new Error('request error');
@@ -198,6 +232,28 @@ describe('lib/fetch-feed', () => {
 
 			it('rejects the promise with the request error', () => {
 				assert.strictEqual(caughtError, requestError);
+			});
+
+		});
+
+		describe('feed request "response" handler', () => {
+			let errorHandler;
+
+			beforeEach(() => {
+				const calls = td.explain(mockGotStream.on).calls;
+				const responseHandler = calls.find(call => call.args[0] === 'response').args[1];
+				errorHandler = calls.find(call => call.args[0] === 'error').args[1];
+				responseHandler({
+					url: 'mock-response-url'
+				});
+			});
+
+			it('unbinds the feed request error handler', () => {
+				td.verify(mockGotStream.off('error', errorHandler), {times: 1});
+			});
+
+			it('pipes the feed request response into the feed parser', () => {
+				td.verify(mockGotStream.pipe(mockFeedParserInstance), {times: 1});
 			});
 
 		});
@@ -277,11 +333,53 @@ describe('lib/fetch-feed', () => {
 
 		});
 
+		describe('when `options.onEntry` is not defined', () => {
+			let onEntry;
+
+			beforeEach(() => {
+				mockFeedParserInstance.on = td.func();
+				onEntry = options.onEntry = td.func();
+				delete options.onEntry;
+				returnedPromise = fetchFeed(options);
+			});
+
+			describe('feed parser "readable" handler', () => {
+				let mockEntries;
+
+				beforeEach(() => {
+					const readableHandler = td.explain(mockFeedParserInstance.on).calls
+						.find(call => call.args[0] === 'readable').args[1];
+					mockEntries = [
+						'mock-entry-1',
+						'mock-entry-2',
+						'mock-entry-3'
+					];
+					td.when(mockFeedParserInstance.read()).thenReturn(
+						mockEntries[0],
+						mockEntries[1],
+						mockEntries[2],
+						undefined
+					);
+					readableHandler(mockEntries);
+				});
+
+				it('does not call `options.onEntry`', () => {
+					td.verify(onEntry(), {
+						ignoreExtraArgs: true,
+						times: 0
+					});
+				});
+
+			});
+
+		});
+
 	});
 
 	describe('fetchFeed(options) full flow', () => {
 		let mockEntries;
 		let mockMeta;
+		let mockResponse;
 		let options;
 		let resolvedValue;
 
@@ -303,6 +401,17 @@ describe('lib/fetch-feed', () => {
 				'mock-entry-2',
 				'mock-entry-3'
 			];
+			mockResponse = {
+				url: 'mock-response-url'
+			};
+
+			// Automatically pipe the response
+			td.when(mockGotStream.on('response'), {
+				// Intentionally not deferrered, to make sure the response is handled
+				// before feed meta or entry reading
+				defer: false,
+				ignoreExtraArgs: true
+			}).thenCallback(mockResponse);
 
 			// Automatically resolve feed meta
 			td.when(mockFeedParserInstance.on('meta'), {
@@ -331,6 +440,20 @@ describe('lib/fetch-feed', () => {
 			assert.strictEqual(resolvedValue.url, mockMeta.xmlUrl);
 			assert.strictEqual(resolvedValue.title, mockMeta.title);
 			assert.strictEqual(resolvedValue.entryCount, mockEntries.length);
+		});
+
+		describe('when the feed meta does not include an xmlUrl property', () => {
+
+			beforeEach(async () => {
+				delete mockMeta.xmlUrl;
+				resolvedValue = await fetchFeed(options);
+			});
+
+			it('resolves with a results object that includes the response URL rather than the meta xmlUrl property', () => {
+				assert.isObject(resolvedValue);
+				assert.strictEqual(resolvedValue.url, mockResponse.url);
+			});
+
 		});
 
 		describe('when `options.onInfo` rejects with an error', () => {

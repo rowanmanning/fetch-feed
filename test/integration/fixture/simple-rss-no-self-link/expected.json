@@ -1,6 +1,6 @@
 {
 	"resolvedValue": {
-		"url": "http://example.org/feed/",
+		"url": "{{FEED_URL}}",
 		"title": "RSS Title",
 		"entryCount": 1
 	},
@@ -19,14 +19,8 @@
 		"pubdate": "2009-09-06T16:20:00.000Z",
 		"pubDate": "2009-09-06T16:20:00.000Z",
 		"link": "http://www.example.com/main.html",
-		"xmlurl": "http://example.org/feed/",
-		"xmlUrl": "http://example.org/feed/",
-		"atom:link": {
-			"@": {
-				"href": "http://example.org/feed/",
-				"rel": "self"
-			}
-		},
+		"xmlurl": "{{FEED_URL}}",
+		"xmlUrl": "{{FEED_URL}}",
 		"author": null,
 		"language": null,
 		"favicon": null,
@@ -108,12 +102,6 @@
 			"meta": {
 				"#ns": [],
 				"@": [],
-				"atom:link": {
-					"@": {
-						"href": "http://example.org/feed/",
-						"rel": "self"
-					}
-				},
 				"#xml": {
 					"version": "1.0",
 					"encoding": "UTF-8"
@@ -126,8 +114,8 @@
 				"pubdate": "2009-09-06T16:20:00.000Z",
 				"pubDate": "2009-09-06T16:20:00.000Z",
 				"link": "http://www.example.com/main.html",
-				"xmlurl": "http://example.org/feed/",
-				"xmlUrl": "http://example.org/feed/",
+				"xmlurl": "{{FEED_URL}}",
+				"xmlUrl": "{{FEED_URL}}",
 				"author": null,
 				"language": null,
 				"favicon": null,

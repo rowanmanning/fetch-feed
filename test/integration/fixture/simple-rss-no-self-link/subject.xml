@@ -4,7 +4,6 @@
 
 		<title>RSS Title</title>
 		<description>This is an example of an RSS feed</description>
-		<atom:link href="http://example.org/feed/" rel="self" />
 		<link>http://www.example.com/main.html</link>
 		<copyright>2020 Example.com All rights reserved</copyright>
 		<lastBuildDate>Mon, 06 Sep 2010 00:01:00 +0000</lastBuildDate>
