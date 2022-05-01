@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xml:base="http://www.nasa.gov/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>NASA Breaking News</title>
+		<description>A RSS news feed containing the latest NASA news articles and press releases.</description>
+		<link>http://www.nasa.gov/</link>
+		<atom:link rel="self" href="http://www.nasa.gov/rss/dyn/breaking_news.rss" />
+		<language>en-us</language>
+		<managingeditor>Author 1 &lt;author1@example.com&gt;</managingeditor>
+		<managingeditor>author2@example.com</managingeditor>
+		<webmaster>webmaster@example.com</webmaster>
+		<item>
+			<title>Coverage Set for Axiom Mission 1 Briefings, Events, Broadcast</title>
+			<link>http://www.nasa.gov/press-release/coverage-set-for-axiom-mission-1-briefings-events-broadcast</link>
+			<description>NASA and Axiom Space will provide coverage of the upcoming prelaunch and launch activities for Axiom Mission 1 (Ax-1), the first private astronaut mission to the International Space Station.</description>
+			<enclosure url="http://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/51712323479_fca7ad570d_k.jpg?itok=ho8lbwW1" length="590356" type="image/jpeg" />
+			<guid isPermaLink="false">http://www.nasa.gov/press-release/coverage-set-for-axiom-mission-1-briefings-events-broadcast</guid>
+			<pubDate>Thu, 31 Mar 2022 09:06 EDT</pubDate>
+			<source url="http://www.nasa.gov/rss/dyn/breaking_news.rss">NASA Breaking News</source>
+			<dc:identifier>478474</dc:identifier>
+		</item>
+	</channel>
+</rss>
