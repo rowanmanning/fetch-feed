@@ -33,7 +33,7 @@
     "got": "^11.8.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
+    "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@rowanmanning/eslint-config": "^3.2.2",
     "chai": "^4.3.6",
