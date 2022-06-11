@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.2.0](https://github.com/rowanmanning/fetch-feed/compare/v2.1.1...v2.2.0) (2022-06-11)
+
+
+### Features
+
+* ensure typescript types are always valid ([65fec44](https://github.com/rowanmanning/fetch-feed/commit/65fec44760bb4e2d7c0e0498be02add9f9ec69c0))
+
+
+### Bug Fixes
+
+* remove accidentally committed tmp directory ([95f7aaa](https://github.com/rowanmanning/fetch-feed/commit/95f7aaa2237adab36cc55c07e30a894453d78e6b))
+
+
+### Miscellaneous
+
+* bump @commitlint/cli from 17.0.1 to 17.0.2 ([108a043](https://github.com/rowanmanning/fetch-feed/commit/108a04302daf065ab7bae27f269d886cf52b7dee))
+* bump @commitlint/config-conventional from 17.0.0 to 17.0.2 ([2d48778](https://github.com/rowanmanning/fetch-feed/commit/2d48778818b6a0cd6636e603f624b48dddb70a9a))
+* bump @rowanmanning/eslint-config from 3.5.0 to 4.0.2 ([aaa91f6](https://github.com/rowanmanning/fetch-feed/commit/aaa91f6e7bacec5541d32819f936750ed53a25ba))
+* bump eslint from 8.16.0 to 8.17.0 ([f53c544](https://github.com/rowanmanning/fetch-feed/commit/f53c5440bb4953fae58474bd5a078d69b4277eaa))
+* fix eslint issues ([e032955](https://github.com/rowanmanning/fetch-feed/commit/e0329554824257c9e9035ad9c2aed6eb57f76c64))
+
 ### [2.1.1](https://github.com/rowanmanning/fetch-feed/compare/v2.1.0...v2.1.1) (2022-05-26)
 
 
