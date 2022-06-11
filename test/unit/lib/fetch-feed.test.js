@@ -16,7 +16,7 @@ describe('lib/fetch-feed', () => {
 			on: td.func(),
 			read: td.func()
 		};
-		td.when(new FeedParser()).thenReturn(mockFeedParserInstance);
+		td.when(new FeedParser({})).thenReturn(mockFeedParserInstance);
 		got = td.replace('got');
 		mockGotStream = {
 			off: td.func(),
@@ -46,7 +46,7 @@ describe('lib/fetch-feed', () => {
 		});
 
 		it('creates a feed parser', () => {
-			td.verify(new FeedParser(), {times: 1});
+			td.verify(new FeedParser({}), {times: 1});
 		});
 
 		it('listens for feed parser errors', () => {

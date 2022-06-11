@@ -20,7 +20,9 @@
   },
   "scripts": {
     "test": "npm run test:coverage && npm run test:integration",
-    "verify": "eslint .",
+    "verify": "npm run verify:eslint && npm run verify:types",
+    "verify:eslint": "eslint .",
+    "verify:types": "tsc --noEmit --project ./jsconfig.json",
     "test:unit": "mocha 'test/unit/**/*.test.js'",
     "test:coverage": "nyc npm run test:unit",
     "project:verify": "npx --yes @rowanmanning/validate-project@2 --type git node-library",
@@ -43,7 +45,8 @@
     "mocha": "^10.0.0",
     "nodemon": "^2.0.15",
     "nyc": "^15.1.0",
-    "testdouble": "^3.16.4"
+    "testdouble": "^3.16.4",
+    "typescript": "^4.7.3"
   },
   "main": "lib/fetch-feed.js",
   "nyc": {
