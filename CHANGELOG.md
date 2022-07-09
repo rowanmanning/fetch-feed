@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/rowanmanning/fetch-feed/compare/v2.2.0...v2.2.1) (2022-07-09)
+
+
+### Bug Fixes
+
+* hide the misc changelog section ([8de2a50](https://github.com/rowanmanning/fetch-feed/commit/8de2a50a9adbf001d38c8c5796fdbbd0053b5e2d))
+
 ## [2.2.0](https://github.com/rowanmanning/fetch-feed/compare/v2.1.1...v2.2.0) (2022-06-11)
 
 
