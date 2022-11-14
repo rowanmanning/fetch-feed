@@ -19,10 +19,12 @@
     "npm": "8.x"
   },
   "scripts": {
-    "test": "npm run test:coverage && npm run test:integration",
+    "build": "npm run build:types",
+    "build:types": "tsc --noEmit false --emitDeclarationOnly --project ./jsconfig.json",
     "verify": "npm run verify:eslint && npm run verify:types",
     "verify:eslint": "eslint .",
     "verify:types": "tsc --noEmit --project ./jsconfig.json",
+    "test": "npm run test:coverage && npm run test:integration",
     "test:unit": "mocha 'test/unit/**/*.test.js'",
     "test:coverage": "nyc npm run test:unit",
     "project:verify": "npx --yes @rowanmanning/validate-project@2 --type git node-library",

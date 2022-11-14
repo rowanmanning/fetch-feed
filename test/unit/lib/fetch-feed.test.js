@@ -527,4 +527,10 @@ describe('lib/fetch-feed', () => {
 
 	});
 
+	describe('.default', () => {
+		it('aliases the module exports', () => {
+			assert.strictEqual(fetchFeed, fetchFeed.default);
+		});
+	});
+
 });
