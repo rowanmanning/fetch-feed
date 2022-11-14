@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/rowanmanning/fetch-feed/compare/v2.2.1...v2.2.2) (2022-11-14)
+
+
+### Bug Fixes
+
+* improve TypeScript compatibility ([96a8320](https://github.com/rowanmanning/fetch-feed/commit/96a832027d1653f1c0525d220f0add505ed09644))
+
 ## [2.2.1](https://github.com/rowanmanning/fetch-feed/compare/v2.2.0...v2.2.1) (2022-07-09)
 
 
