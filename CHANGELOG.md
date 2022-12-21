@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.3](https://github.com/rowanmanning/fetch-feed/compare/v2.2.2...v2.2.3) (2022-12-21)
+
+
+### Bug Fixes
+
+* bump got from 11.8.5 to 11.8.6 ([7ea8ce2](https://github.com/rowanmanning/fetch-feed/commit/7ea8ce28f9ee29efc707fead5b7fc129b7af5f94))
+
 ## [2.2.2](https://github.com/rowanmanning/fetch-feed/compare/v2.2.1...v2.2.2) (2022-11-14)
 
 
