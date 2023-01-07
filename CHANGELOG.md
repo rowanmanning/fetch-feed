@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.4](https://github.com/rowanmanning/fetch-feed/compare/v2.2.3...v2.2.4) (2023-01-07)
+
+
+### Bug Fixes
+
+* bump json5 from 2.2.1 to 2.2.3 ([80d3f26](https://github.com/rowanmanning/fetch-feed/commit/80d3f26acec3795e1fc426e6c245e58197314e68))
+
 ## [2.2.3](https://github.com/rowanmanning/fetch-feed/compare/v2.2.2...v2.2.3) (2022-12-21)
 
 
