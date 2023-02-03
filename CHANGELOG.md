@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.5](https://github.com/rowanmanning/fetch-feed/compare/v2.2.4...v2.2.5) (2023-02-03)
+
+
+### Bug Fixes
+
+* bump http-cache-semantics from 4.1.0 to 4.1.1 ([4393791](https://github.com/rowanmanning/fetch-feed/commit/4393791cf5b6d4d57e209c57ef5ffc4bd46c8b7b))
+
 ## [2.2.4](https://github.com/rowanmanning/fetch-feed/compare/v2.2.3...v2.2.4) (2023-01-07)
 
 
