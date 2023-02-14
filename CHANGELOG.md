@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.6](https://github.com/rowanmanning/fetch-feed/compare/v2.2.5...v2.2.6) (2023-02-14)
+
+
+### Bug Fixes
+
+* support npm v9 ([8fa5aa9](https://github.com/rowanmanning/fetch-feed/commit/8fa5aa9ca9a649f7d33ca3990e5aee1c0ffb64f4))
+
 ## [2.2.5](https://github.com/rowanmanning/fetch-feed/compare/v2.2.4...v2.2.5) (2023-02-03)
 
 
