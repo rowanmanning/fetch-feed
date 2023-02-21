@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/rowanmanning/fetch-feed/compare/v2.2.6...v3.0.0) (2023-02-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node.js 14
+
+### Miscellaneous
+
+* drop support for Node.js 14 ([496cb93](https://github.com/rowanmanning/fetch-feed/commit/496cb933ace23be78fa0e929e255263f09ef8661))
+
 ## [2.2.6](https://github.com/rowanmanning/fetch-feed/compare/v2.2.5...v2.2.6) (2023-02-14)
 
 
