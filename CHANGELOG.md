@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/rowanmanning/fetch-feed/compare/v3.0.0...v3.0.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* add support for Node.js 20 ([015f8ef](https://github.com/rowanmanning/fetch-feed/commit/015f8efa1247d14fd080d7965c57f4459e822577))
+
 ## [3.0.0](https://github.com/rowanmanning/fetch-feed/compare/v2.2.6...v3.0.0) (2023-02-21)
 
 
