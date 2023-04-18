@@ -15,7 +15,7 @@
   "bugs": "https://github.com/rowanmanning/fetch-feed/issues",
   "license": "MIT",
   "engines": {
-    "node": "16.x || 18.x",
+    "node": "16.x || 18.x || 20.x",
     "npm": "8.x || 9.x"
   },
   "scripts": {
