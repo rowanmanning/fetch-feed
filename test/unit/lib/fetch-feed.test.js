@@ -1,6 +1,6 @@
 'use strict';
 
-const {assert} = require('chai');
+const assert = require('node:assert');
 const td = require('testdouble');
 
 describe('lib/fetch-feed', () => {
@@ -42,7 +42,7 @@ describe('lib/fetch-feed', () => {
 		});
 
 		it('returns a promise', () => {
-			assert.instanceOf(returnedPromise, Promise);
+			assert.ok(returnedPromise instanceof Promise);
 		});
 
 		it('creates a feed parser', () => {
@@ -206,9 +206,9 @@ describe('lib/fetch-feed', () => {
 			});
 
 			it('resolves the promise with a results object', () => {
-				assert.isObject(resolvedValue);
+				assert.strictEqual(typeof resolvedValue, 'object');
 				assert.strictEqual(resolvedValue.url, options.url);
-				assert.isNull(resolvedValue.title);
+				assert.strictEqual(resolvedValue.title, null);
 				assert.strictEqual(resolvedValue.entryCount, 0);
 			});
 
@@ -436,7 +436,7 @@ describe('lib/fetch-feed', () => {
 		});
 
 		it('resolves with a results object that includes meta and entry information', () => {
-			assert.isObject(resolvedValue);
+			assert.strictEqual(typeof resolvedValue, 'object');
 			assert.strictEqual(resolvedValue.url, mockMeta.xmlUrl);
 			assert.strictEqual(resolvedValue.title, mockMeta.title);
 			assert.strictEqual(resolvedValue.entryCount, mockEntries.length);
@@ -450,7 +450,7 @@ describe('lib/fetch-feed', () => {
 			});
 
 			it('resolves with a results object that includes the response URL rather than the meta xmlUrl property', () => {
-				assert.isObject(resolvedValue);
+				assert.strictEqual(typeof resolvedValue, 'object');
 				assert.strictEqual(resolvedValue.url, mockResponse.url);
 			});
 
@@ -522,7 +522,7 @@ describe('lib/fetch-feed', () => {
 		});
 
 		it('does not throw an error', () => {
-			assert.isUndefined(caughtError);
+			assert.strictEqual(caughtError, undefined);
 		});
 
 	});

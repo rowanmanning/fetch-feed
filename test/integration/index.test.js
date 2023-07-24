@@ -1,6 +1,6 @@
 'use strict';
 
-const {assert} = require('chai');
+const assert = require('node:assert');
 const fetchFeed = require('../..');
 const fs = require('fs/promises');
 
@@ -52,7 +52,7 @@ for (const test of tests) {
 			}));
 			const expectedJson = await fs.readFile(`${__dirname}/fixture/${test.path}/expected.json`, 'utf-8');
 			const expected = JSON.parse(expectedJson.replace(/\{\{FEED_URL\}\}/gi, url));
-			assert.deepEqual(actual, expected);
+			assert.deepStrictEqual(actual, expected);
 		});
 	});
 }
