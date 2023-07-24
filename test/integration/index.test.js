@@ -2,7 +2,7 @@
 
 const assert = require('node:assert');
 const fetchFeed = require('../..');
-const fs = require('fs/promises');
+const fs = require('node:fs/promises');
 
 const tests = [
 	{

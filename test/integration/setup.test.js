@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const path = require('path');
+const path = require('node:path');
 
 before(done => {
 	const app = global.app = express();
