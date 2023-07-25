@@ -3,32 +3,9 @@
 ## 3.0.3 (2023-07-25)
 
 
-### ⚠ BREAKING CHANGES
-
-* drop support for Node.js 14
-
-### Features
-
-* ensure typescript types are always valid ([65fec44](https://github.com/rowanmanning/fetch-feed/commit/65fec44760bb4e2d7c0e0498be02add9f9ec69c0))
-
-
 ### Bug Fixes
 
-* add support for Node.js 20 ([015f8ef](https://github.com/rowanmanning/fetch-feed/commit/015f8efa1247d14fd080d7965c57f4459e822577))
-* bump got from 11.8.5 to 11.8.6 ([7ea8ce2](https://github.com/rowanmanning/fetch-feed/commit/7ea8ce28f9ee29efc707fead5b7fc129b7af5f94))
-* bump http-cache-semantics from 4.1.0 to 4.1.1 ([4393791](https://github.com/rowanmanning/fetch-feed/commit/4393791cf5b6d4d57e209c57ef5ffc4bd46c8b7b))
-* bump json5 from 2.2.1 to 2.2.3 ([80d3f26](https://github.com/rowanmanning/fetch-feed/commit/80d3f26acec3795e1fc426e6c245e58197314e68))
-* hide the misc changelog section ([8de2a50](https://github.com/rowanmanning/fetch-feed/commit/8de2a50a9adbf001d38c8c5796fdbbd0053b5e2d))
-* improve TypeScript compatibility ([96a8320](https://github.com/rowanmanning/fetch-feed/commit/96a832027d1653f1c0525d220f0add505ed09644))
-* remove accidentally committed tmp directory ([95f7aaa](https://github.com/rowanmanning/fetch-feed/commit/95f7aaa2237adab36cc55c07e30a894453d78e6b))
-* sort out broken releases ([1ad9cca](https://github.com/rowanmanning/fetch-feed/commit/1ad9cca773c0ed5b84b5d13aa42ccef5312395a6))
-* support npm v9 ([8fa5aa9](https://github.com/rowanmanning/fetch-feed/commit/8fa5aa9ca9a649f7d33ca3990e5aee1c0ffb64f4))
-* use node-prefixed modules ([a5cede4](https://github.com/rowanmanning/fetch-feed/commit/a5cede4921f09e43b29be36fbde31780f3ba1fba))
-
-
-### Miscellaneous
-
-* drop support for Node.js 14 ([496cb93](https://github.com/rowanmanning/fetch-feed/commit/496cb933ace23be78fa0e929e255263f09ef8661))
+* sort out broken releases
 
 ## [3.0.1](https://github.com/rowanmanning/fetch-feed/compare/v3.0.0...v3.0.1) (2023-04-18)
 
