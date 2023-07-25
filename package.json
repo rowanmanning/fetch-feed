@@ -1,6 +1,6 @@
 {
   "name": "@rowanmanning/fetch-feed",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "description": "Fetch and parse RSS and Atom feeds",
   "keywords": [
     "feed",
