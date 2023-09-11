@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/rowanmanning/fetch-feed/compare/v3.0.3...v4.0.0) (2023-09-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node.js 16
+
+### Miscellaneous
+
+* drop support for Node.js 16 ([8b99f85](https://github.com/rowanmanning/fetch-feed/commit/8b99f8536c908ed418ede441bff70f8e7204e770))
+
 ## 3.0.3 (2023-07-25)
 
 
