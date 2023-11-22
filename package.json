@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "feedparser": "^2.2.10",
-    "got": "^11.8.3"
+    "got": "^12.6.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
