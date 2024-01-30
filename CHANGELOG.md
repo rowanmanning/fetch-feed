@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/rowanmanning/fetch-feed/compare/v4.0.0...v4.1.0) (2024-01-30)
+
+
+### Features
+
+* add official support for npm 10 ([6f0409c](https://github.com/rowanmanning/fetch-feed/commit/6f0409cce1c3439af7edd8619e8eeb0123433062))
+
 ## [4.0.0](https://github.com/rowanmanning/fetch-feed/compare/v3.0.3...v4.0.0) (2023-09-11)
 
 
