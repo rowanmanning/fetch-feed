@@ -30,7 +30,7 @@
     "project:verify": "npx --yes @rowanmanning/validate-project@3 --type git node-library",
     "project:fix": "npx --yes @rowanmanning/validate-project@3 --type git node-library --fix",
     "test:integration": "mocha 'test/integration/**/*.test.js'",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "feedparser": "^2.2.10",
@@ -42,7 +42,7 @@
     "@rowanmanning/eslint-config": "^8.0.0",
     "eslint": "^8.9.0",
     "express": "^4.17.3",
-    "husky": "^8.0.1",
+    "husky": "^9.0.7",
     "mocha": "^10.0.0",
     "nodemon": "^3.0.1",
     "nyc": "^15.1.0",
