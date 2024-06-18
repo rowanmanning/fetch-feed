@@ -3,16 +3,17 @@
 const express = require('express');
 const path = require('node:path');
 
-before(done => {
-	const app = global.app = express();
+before((done) => {
+	const app = express();
+	global.app = app;
 	app.use(express.static(path.join(__dirname, 'fixture')));
 	global.server = app.listen(() => {
-		const {port} = global.server.address();
+		const { port } = global.server.address();
 		global.fixtureBaseUrl = `http://localhost:${port}`;
 		done();
 	});
 });
 
-after(done => {
+after((done) => {
 	global.server.close(done);
 });
