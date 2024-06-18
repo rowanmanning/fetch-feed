@@ -45,12 +45,17 @@ for (const test of tests) {
 		});
 
 		it('resolves with the expected data', async () => {
-			const actual = JSON.parse(JSON.stringify({
-				resolvedValue,
-				feedInfo,
-				feedEntries
-			}));
-			const expectedJson = await fs.readFile(`${__dirname}/fixture/${test.path}/expected.json`, 'utf-8');
+			const actual = JSON.parse(
+				JSON.stringify({
+					resolvedValue,
+					feedInfo,
+					feedEntries
+				})
+			);
+			const expectedJson = await fs.readFile(
+				`${__dirname}/fixture/${test.path}/expected.json`,
+				'utf-8'
+			);
 			const expected = JSON.parse(expectedJson.replace(/\{\{FEED_URL\}\}/gi, url));
 			assert.deepStrictEqual(actual, expected);
 		});
