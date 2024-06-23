@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.0](https://github.com/rowanmanning/fetch-feed/compare/v4.1.0...v4.2.0) (2024-06-23)
+
+
+### Features
+
+* add Node.js 22 support ([bb9e120](https://github.com/rowanmanning/fetch-feed/commit/bb9e12030abfdac11830b06fa26dcceb746c5783))
+
 ## [4.1.0](https://github.com/rowanmanning/fetch-feed/compare/v4.0.0...v4.1.0) (2024-01-30)
 
 
