@@ -1,7 +1,10 @@
 'use strict';
 
+const { afterEach, beforeEach, describe, it } = require('node:test');
 const assert = require('node:assert');
 const td = require('testdouble');
+
+td.config({ ignoreWarnings: true });
 
 describe('lib/fetch-feed', () => {
 	let FeedParser;
@@ -26,6 +29,8 @@ describe('lib/fetch-feed', () => {
 		td.when(got.stream(), { ignoreExtraArgs: true }).thenReturn(mockGotStream);
 		fetchFeed = require('../../../lib/fetch-feed');
 	});
+
+	afterEach(() => td.reset());
 
 	describe('fetchFeed(options)', () => {
 		let options;
