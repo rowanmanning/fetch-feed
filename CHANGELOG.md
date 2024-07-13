@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1](https://github.com/rowanmanning/fetch-feed/compare/v4.2.0...v4.2.1) (2024-07-13)
+
+
+### Bug Fixes
+
+* prevent husky from failing ([b7101de](https://github.com/rowanmanning/fetch-feed/commit/b7101de636fd73bfcde3b73dcccf93867c3a08b3))
+
 ## [4.2.0](https://github.com/rowanmanning/fetch-feed/compare/v4.1.0...v4.2.0) (2024-06-23)
 
 
