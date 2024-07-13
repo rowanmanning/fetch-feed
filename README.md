@@ -1,6 +1,9 @@
 
 # Fetch Feed
 
+> [!CAUTION]
+> This library has been deprecated and will no longer receive feature updates or security patches. **We recommend moving to [`@rowanmanning/feed-parser`](https://www.npmjs.com/package/@rowanmanning/feed-parser)** which has a similar API.
+
 Fetch and parse RSS and Atom feeds. Fetch Feed is a Promise-based wrapper around [node-feedparser](https://github.com/danmactough/node-feedparser).
 
 
